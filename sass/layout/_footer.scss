@@ -1,0 +1,112 @@
+.footer
+{
+    padding: 0 10rem;
+
+    @include respond(tab-land){padding: 0 7rem;}
+
+    &__hr
+    {
+        margin-bottom: 1rem;
+    }
+    &__col
+    {
+        margin-bottom: 0rem !important;
+    }
+
+    //first column
+    &__item
+    {
+        &:not(:last-of-type)
+        {
+            margin-bottom: 1rem;
+        }
+    }
+    &__link
+    {
+        font-size: 1.4rem;
+        transition: all .2s ease-in-out; // for hover in the typo
+        &:hover{text-decoration: underline;}
+    }
+
+    // second column
+    &__hebe--bebe
+    {
+        font-size: 1.6rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }
+    &__paragraph
+    {
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+        letter-spacing: 1px;
+        line-height: 150%;
+    }
+    &__social
+    {
+        margin-bottom: 4rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &--img
+        {
+            height: 3rem;
+            width: 3rem;
+            &:not(:last-of-type){margin-right: 4rem;}
+        }
+    }
+    &__copyright
+    {
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 300;
+        margin-bottom: 2rem;
+    }
+
+    // third column
+    &__join--text
+    {
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+    }
+    &__form
+    {
+        font-size: 1.5rem;
+        background: $color-gray-light-2;
+
+        display: flex;
+
+        @include respond(tab-port)
+        {
+            font-size: 1.2rem;
+        }
+
+        &--email
+        {
+            font-family: inherit;
+            font-size: inherit;
+            color: inherit;
+            background: $color-gray-light-2;
+            padding: 1rem 2.2rem;
+            border: none;
+            width: 100%;
+            &:focus
+            {
+                outline: none;
+            }
+            &::-webkit-input-placeholder{font-weight: 300;}
+
+            @include respond(tab-port)
+            {
+                padding: 1rem 1.1rem;
+            }
+
+        }
+        &--btn
+        {
+            margin-right: 1rem;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.btn
+{
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1rem 1rem;
+    border: none;
+
+    &:active, &:visited
+    {
+        outline: none;
+    }
+
+    &--black
+    {
+        color: $color-white;
+        background: $color-black;
+    }
+    
+}

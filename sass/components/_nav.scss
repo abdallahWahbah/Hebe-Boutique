@@ -1,0 +1,173 @@
+.nav
+{
+    background: $color-white;
+
+    display: flex;
+    flex-direction: column;
+
+    & > *
+    {
+        padding: 0 10rem;
+
+        @include respond(tab-land){padding: 0 7rem;}
+    }
+
+    &__login
+    {
+        background: $color-black;
+        color: $color-white;
+        text-transform: uppercase;
+        font-size: 1.3rem;
+        font-weight: 700;
+        padding: .2rem 10rem;
+        height: 2.5rem;
+        
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        @include respond(tab-land){padding: 0 7rem;}
+
+        & > *
+        {
+            transition: all .2s ease-in-out; // for hover, see typo
+            cursor: pointer;
+
+            &:not(:last-child){margin-right: 2rem;}
+        }
+        & > *:nth-child(2){cursor: text;}
+        
+        &--text{margin-top: -.6rem;}
+    }
+    &__main
+    {   
+        height: 8rem;
+        box-shadow: $shadow-light;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &--cart
+        {
+            height: 3rem;
+            width: 3rem;
+            cursor: pointer;
+        }
+        &--page-name
+        {
+            font-size: 4.5rem;
+            font-weight: 700;
+        }
+        &--eqiv
+        {
+            font-size: 2.9rem;
+            cursor: pointer;
+            
+            @include respond(tab-port){position: relative;}
+        }
+        &--link-hide{display: none;}
+        &--list
+        {
+            display: flex;
+
+            @include respond(tab-port)
+            {
+                .js-cart-hide-port{display: none;}
+                flex-direction: column;
+                position: absolute;
+                top: 7rem;
+                right: 0rem;
+                width: 25rem;
+                box-shadow: $shadow-medium;
+                padding: 1rem 1.5rem;
+                display: none;
+
+                & > *:not(:last-child)
+                {
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+        &--item
+        {
+            font-size: 1.4rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: all .2s ease-in-out;
+
+            &:not(:last-of-type){margin-right: 1rem;}
+
+            &:active, &:visited
+            {
+                transform: translateY(2px);
+            }
+        }
+        &--link
+        {
+            transition: all .2s ease-in-out; // for hover, see typo
+        }
+    }
+
+
+
+
+
+
+
+    // Shop Block
+    &__shop
+    {
+        display: none;
+        
+        &--col
+        {
+            padding: 2rem 0;
+            margin-bottom: 0 !important;
+        }
+        &--item
+        {
+            &:not(:last-of-type)
+            {
+                margin-bottom: 1rem;
+            }
+            &:first-of-type
+            {
+                margin-bottom: 2rem;
+                text-transform: uppercase;
+            }
+        }
+        &--link
+        {
+            font-size: 1.6rem;
+            transition: all .2s ease-in-out; // for hover
+        }
+    }
+    &__shop--show{display: block;}
+}
+.sticky
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999999999999999999999999999999;
+    width: 100%;
+
+    animation: smoothStickNav 1s;
+}
+@keyframes smoothStickNav
+{
+    0%
+    {
+        transform: translateY(-12.5rem);
+    }
+    100%
+    {
+        transform: translateY(0px);
+    }
+}
+.sticky ~ .header
+{
+    margin-top: 10.5rem;
+}

@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hebe Boutique</title>
+
+        <!--Styling-->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <!--Font-->
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet"> -->
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+        <!--Jquery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!--Fav Icon-->
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+
+    </head>
+    <body>
+
+
+        <!--
+        bugs and not finished tasks
+            - cart, login, create account implement them
+            - implement header arrow link to go to features
+            - click on product img to go to another page
+        -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <nav class="nav"> <!--comp/nav-->
+            <div class="nav__login">
+                <a href="#" class="nav__login--login">Log in</a>
+                <div class="nav__login--text">.</div>
+                <a href="#" class="nav__login--create-account">Create account</a>
+            </div>
+            <div class="nav__main">
+                <svg class="nav__main--cart nav__main--link-hide">
+                    <use xlink:href="img/sprite.svg#icon-cart"></use>
+                </svg>
+                <div class="nav__main--page-name">hebe.</div>
+                <div class="nav__main--eqiv nav__main--link-hide js--nav__main--eqiv">&equiv;</div>
+                <ul class="nav__main--list">
+                    <li class="nav__main--item"><a class="nav__main--link js--nav__main--link-shop">Shop</a></li>
+                    <li class="nav__main--item"><a href="#" class="nav__main--link">MY BOYFRIENDS BACK</a></li>
+                    <li class="nav__main--item"><a href="#" class="nav__main--link">Staff Edit</a></li>
+                    <li class="nav__main--item"><a href="#" class="nav__main--link">Contact</a></li>
+                    <li class="nav__main--item"><a class="nav__main--link js-cart-hide-port">Cart</a></li>
+                </ul>
+            </div>
+            <div class="nav__shop js--nav__shop">
+                <div class="row">
+                    <div class="col-1-of-4 nav__shop--col">
+                        <ul class="nav__shop--list">
+                            <li class="nav__shop--item"><a href="#" class="nav__shop--link">Shop by</a></li>
+                            <li class="nav__shop--item"><a href="#" class="nav__shop--link">Accessories</a></li>
+                            <li class="nav__shop--item"><a href="#" class="nav__shop--link">Bottoms</a></li>
+                            <li class="nav__shop--item"><a href="#" class="nav__shop--link">Dresses</a></li>
+                            <li class="nav__shop--item"><a href="#" class="nav__shop--link">Tops</a></li>
+                            <li class="nav__shop--item"><a href="#" class="nav__shop--link">Pre-Order</a></li>
+                            <li class="nav__shop--item"><a href="#" class="nav__shop--link">Under 50$</a></li>
+                            <li class="nav__shop--item"><a href="#" class="nav__shop--link">Under 100$</a></li>
+                            <li class="nav__shop--item"><a href="#" class="nav__shop--link">Sold out with suppliers</a></li>
+                            <li class="nav__shop--item"><a href="#" class="nav__shop--link">Sale</a></li>
+                            <li class="nav__shop--item"><a href="#" class="nav__shop--link">Gift Vouvhers</a></li>
+                            <li class="nav__shop--item"><a href="#" class="nav__shop--link">View All</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-1-of-4 nav__shop--col">
+                        <ul class="nav__shop--list">
+                            <li class="nav__shop--item"><a href="#" class="nav__shop--link">Shop by</a></li>
+                            <li class="nav__shop--item"><a href="#" class="nav__shop--link">Accessories</a></li>
+                            <li class="nav__shop--item"><a href="#" class="nav__shop--link">Bottoms</a></li>
+                            <li class="nav__shop--item"><a href="#" class="nav__shop--link">Dresses</a></li>
+                            <li class="nav__shop--item"><a href="#" class="nav__shop--link">Tops</a></li>
+                            <li class="nav__shop--item"><a href="#" class="nav__shop--link">Pre-Order</a></li>
+                            <li class="nav__shop--item"><a href="#" class="nav__shop--link">Under 50$</a></li>
+                            <li class="nav__shop--item"><a href="#" class="nav__shop--link">Under 100$</a></li>
+                            <li class="nav__shop--item"><a href="#" class="nav__shop--link">Sold out with suppliers</a></li>
+                            <li class="nav__shop--item"><a href="#" class="nav__shop--link">Sale</a></li>
+                            <li class="nav__shop--item"><a href="#" class="nav__shop--link">Gift Vouvhers</a></li>
+                            <li class="nav__shop--item"><a href="#" class="nav__shop--link">View All</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-1-of-4 nav__shop--col">
+                        <ul class="nav__shop--list">
+                            <li class="nav__shop--item"><a href="#" class="nav__shop--link">&nbsp;</a></li>
+                            <li class="nav__shop--item"><a href="#" class="nav__shop--link">Accessories</a></li>
+                            <li class="nav__shop--item"><a href="#" class="nav__shop--link">Bottoms</a></li>
+                            <li class="nav__shop--item"><a href="#" class="nav__shop--link">Dresses</a></li>
+                            <li class="nav__shop--item"><a href="#" class="nav__shop--link">Tops</a></li>
+                            <li class="nav__shop--item"><a href="#" class="nav__shop--link">Pre-Order</a></li>
+                            <li class="nav__shop--item"><a href="#" class="nav__shop--link">Under 50$</a></li>
+                            <li class="nav__shop--item"><a href="#" class="nav__shop--link">Under 100$</a></li>
+                            <li class="nav__shop--item"><a href="#" class="nav__shop--link">Sold out with suppliers</a></li>
+                            <li class="nav__shop--item"><a href="#" class="nav__shop--link">Sale</a></li>
+                            <li class="nav__shop--item"><a href="#" class="nav__shop--link">Gift Vouvhers</a></li>
+                            <li class="nav__shop--item"><a href="#" class="nav__shop--link">View All</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-1-of-4 nav__shop--col">
+                        <ul class="nav__shop--list">
+                            <li class="nav__shop--item"><a href="#" class="nav__shop--link">&nbsp;</a></li>
+                            <li class="nav__shop--item"><a href="#" class="nav__shop--link">Accessories</a></li>
+                            <li class="nav__shop--item"><a href="#" class="nav__shop--link">Bottoms</a></li>
+                            <li class="nav__shop--item"><a href="#" class="nav__shop--link">Dresses</a></li>
+                            <li class="nav__shop--item"><a href="#" class="nav__shop--link">Tops</a></li>
+                            <li class="nav__shop--item"><a href="#" class="nav__shop--link">Pre-Order</a></li>
+                            <li class="nav__shop--item"><a href="#" class="nav__shop--link">Under 50$</a></li>
+                            <li class="nav__shop--item"><a href="#" class="nav__shop--link">Under 100$</a></li>
+                            <li class="nav__shop--item"><a href="#" class="nav__shop--link">Sold out with suppliers</a></li>
+                            <li class="nav__shop--item"><a href="#" class="nav__shop--link">Sale</a></li>
+                            <li class="nav__shop--item"><a href="#" class="nav__shop--link">Gift Vouvhers</a></li>
+                            <li class="nav__shop--item"><a href="#" class="nav__shop--link">View All</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+
+
+
+
+        <section class="cart">
+            <div class="cart__empty">
+                <div class="cart__empty--row">
+                    <div class="cart__empty--row-text">Your cart is empty.</div>
+                    <div class="cart__empty--row-close">&cross;</div>
+                </div>
+                <div class="cart__empty--browse">Continue browsing here</div>
+            </div>
+        </section>
+
+
+
+
+
+
+        <header class="header">
+            <div class="header__box">
+                <div class="header__box-text">Summer sale</div>
+                <a class="header__box-link">Shop now</a>
+            </div>
+            <a class="header__arrow">
+                <span class="header__arrow--inner">&#8681;</span>
+            </a>
+        </header>
+
+
+
+
+
+
+        <section class="products"> <!--layout/products-->
+            <div class="heading-secondary products__heading">Featured products</div>
+            <div class="row">
+                <div class="col-1-of-3 products__col">
+                    <img src="img/col1.jpg" alt="product photo" class="products__col--img">
+                    <div class="products__col--publisher">RUE STIIC</div>
+                    <div class="products__col--description">Adaline Shirt Dress</div>
+                    <div class="products__col--price">$209.00</div>
+                </div>
+                <div class="col-1-of-3 products__col">
+                    <img src="img/col2.jpg" alt="product photo" class="products__col--img">
+                    <div class="products__col--publisher">MSCH COPENHAGEN</div>
+                    <div class="products__col--description">Alva Msch Est Tee // White/Apricot</div>
+                    <div class="products__col--price">$50.00</div>
+                </div>
+                <div class="col-1-of-3 products__col">
+                    <img src="img/col3.jpg" alt="product photo" class="products__col--img">
+                    <div class="products__col--publisher">MY BOYFRIENDS BACK</div>
+                    <div class="products__col--description">Dreamer L/S Tee // Blush</div>
+                    <div class="products__col--price">$110.00</div>
+                </div>
+                <div class="col-1-of-3 products__col">
+                    <img src="img/col4.jpg" alt="product photo" class="products__col--img">
+                    <div class="products__col--publisher">RUE STIIC</div>
+                    <div class="products__col--description">Adaline Shirt Dress</div>
+                    <div class="products__col--price">$209.00</div>
+                </div>
+                <div class="col-1-of-3 products__col">
+                    <img src="img/col5.jpg" alt="product photo" class="products__col--img">
+                    <div class="products__col--publisher">RUE STIIC</div>
+                    <div class="products__col--description">Adaline Shirt Dress</div>
+                    <div class="products__col--price">$209.00</div>
+                </div>
+                <div class="col-1-of-3 products__col">
+                    <img src="img/col6.jpg" alt="product photo" class="products__col--img">
+                    <div class="products__col--publisher">RUE STIIC</div>
+                    <div class="products__col--description">Adaline Shirt Dress</div>
+                    <div class="products__col--price">$209.00</div>
+                </div>
+                <div class="col-1-of-3 products__col">
+                    <img src="img/col7.jpg" alt="product photo" class="products__col--img">
+                    <div class="products__col--publisher">RUE STIIC</div>
+                    <div class="products__col--description">Adaline Shirt Dress</div>
+                    <div class="products__col--price">$209.00</div>
+                </div>
+                <div class="col-1-of-3 products__col">
+                    <img src="img/col8.jpg" alt="product photo" class="products__col--img">
+                    <div class="products__col--publisher">RUE STIIC</div>
+                    <div class="products__col--description">Adaline Shirt Dress</div>
+                    <div class="products__col--price">$209.00</div>
+                </div>
+                <div class="col-1-of-3 products__col">
+                    <img src="img/col9.jpg" alt="product photo" class="products__col--img">
+                    <div class="products__col--publisher">RUE STIIC</div>
+                    <div class="products__col--description">Adaline Shirt Dress</div>
+                    <div class="products__col--price">$209.00</div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+        <section class="friends__back"> <!--pages/home-->
+            <a href="#" class="friends__back--text">Shop my friends back</a>
+        </section>
+
+
+
+
+
+
+        <section class="feed"> <!--pages/home-->
+            <div class="feed__container">
+                <img src="img/col1.jpg" class="feed__container--img">
+            </div>
+            <div class="feed__container">
+                <img src="img/col2.jpg" class="feed__container--img">
+            </div>
+            <div class="feed__container">
+                <img src="img/col3.jpg" class="feed__container--img">
+            </div>
+            <div class="feed__container">
+                <img src="img/col4.jpg" class="feed__container--img">
+            </div>
+            <div class="feed__container">
+                <img src="img/col5.jpg" class="feed__container--img">
+            </div>
+            <div class="feed__container">
+                <img src="img/col6.jpg" class="feed__container--img">
+            </div>
+        </section>
+
+
+
+
+
+        <footer class="footer"><!--layout/footer-->
+            <div class="row">
+                <div class="col-1-of-3 footer__col">
+                    <div class="heading-tertiary">Customer Care</div> <!--base/typo-->
+                    <hr class="footer__hr">
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="#" class="footer__link">Contact us</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">FAQs</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">The story</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Store location</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Blog</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Carrers</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Terms of use</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Shipping</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Returns</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Privacy policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-1-of-3 footer__col">
+                    <div class="heading-tertiary">About</div> <!--base/typo-->
+                    <hr class="footer__hr">
+                    <div class="footer__hebe--bebe">Hebe, bebe</div>
+                    <p class="footer__paragraph">
+                        Curators of ethical fashion and New Zealand designed.
+                    </p>
+                    <p class="footer__paragraph">
+                        Hebe is a destination for style seekers. Located in Masterton's boutique Kuripuni Village, Hebe is lovingly and
+                        carefully curated by Owner and Buyer, Dani Burkhart. Dedicated to NZ designed, ethical fashion and accessories- Hebe is
+                        a beautiful style edit.
+                    </p>
+                    <p class="footer__paragraph">
+                        Spliced on the rack, you will discover a mix of your favourite boutique labels, lounge-wear and lifestyle products. Hebe
+                        presents small, regular collections from designers that are limited in nature with a high rotation. For all women, all
+                        sizes, Hebe is the go-to fashion boutique of the Wairarapa. Purchases made at Hebe support suppliers and makers within
+                        NZ- shop local, shop small!
+                    </p>
+                    <div class="footer__social">
+                        <svg class="footer__social--img">
+                            <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                        </svg>
+                        <svg class="footer__social--img">
+                            <use xlink:href="img/sprite.svg#icon-whatsapp"></use>
+                        </svg>
+                        <svg class="footer__social--img">
+                            <use xlink:href="img/sprite.svg#icon-google"></use>
+                        </svg>
+                        <svg class="footer__social--img">
+                            <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                        </svg>
+                    </div>
+                    <div class="footer__social">
+                        <svg class="footer__social--img">
+                            <use xlink:href="img/sprite.svg#icon-tumblr"></use>
+                        </svg>
+                        <svg class="footer__social--img">
+                            <use xlink:href="img/sprite.svg#icon-play"></use>
+                        </svg>
+                    </div>
+                    <div class="footer__copyright">&copy; reserved by abdallah wahbah 2021</div>
+                </div>
+                <div class="col-1-of-3 footer__col">
+                    <div class="heading-tertiary">Newsletter</div> <!--base/typo-->
+                    <hr class="footer__hr">
+                    <div class="footer__join--text">Join our mailing list</div>
+                    <form action="#" class="footer__form">
+                        <input type="email" name="email" placeholder="Your@email.com" class="footer__form--email" required>
+                        <input type="submit" value="Subscribe" class="btn btn--black footer__form--btn">
+                    </form>
+                </div>
+            </div>
+        </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script src="js/functionality.js"></script>
+        <script src="js/jquery.waypoints.min.js"></script>
+    </body>
+</html>

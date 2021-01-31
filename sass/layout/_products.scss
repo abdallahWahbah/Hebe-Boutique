@@ -1,0 +1,86 @@
+.products
+{
+    text-align: center;
+    margin: 4rem 0;
+    padding: 0 10rem;
+
+    @include respond(tab-land){padding: 0 7rem;}
+    
+    &__heading
+    {
+        margin-bottom: 4rem;
+    }
+
+    &__col
+    {
+        // box-shadow: 0 .5rem 1rem rgba($color-black, .2);
+        height: 40rem;
+
+        @include respond(tab-land)
+        {
+            height: 35rem;
+        }
+        @include respond(tab-port)
+        {
+            height: 30rem;
+        }
+
+        & > *
+        {
+            margin-bottom: 1%;
+        }
+        &--img
+        {
+            height:75%;
+            width: 100%;
+
+            @include respond(tab-land)
+            {
+                height: 70%;   
+            }
+        }
+        &--publisher
+        {
+            font-size: 1.3rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+
+            @include respond(tab-land)
+            {
+                font-size: 1.2rem;
+            }
+            @include respond(tab-port)
+            {
+                font-size: 1.1rem;
+            }
+        }
+        &--description
+        {
+            font-size: 1.5rem;
+            letter-spacing: 1px;
+
+            @include respond(tab-land)
+            {
+                font-size: 1.3rem;
+            }
+            @include respond(tab-port)
+            {
+                font-size: 1.2rem;
+            }
+        }
+        &--price
+        {
+            font-size: 1.3rem;
+            letter-spacing: 1px;
+
+            @include respond(tab-land)
+            {
+                font-size: 1.1rem;
+            }
+            @include respond(tab-port)
+            {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,51 @@
+.cart
+{
+    background: inherit;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    z-index: -1;
+    transition: all .2s ease-in-out;
+
+    &__empty
+    {
+        // width: 50%;
+        margin: 0 auto;
+        margin-top: 5rem;
+        font-size: 2.2rem;
+        font-weight: 300;
+        letter-spacing: 1px;
+        border-radius: 4px;
+        overflow: hidden;
+        display: inline-block;
+        transition: all .2s ease-in-out;
+
+        opacity: 0;
+        width: 0%;
+
+
+        &--row
+        {
+            background: $color-white;
+            padding: 1rem 2rem;
+
+            display: flex;
+            align-items: center;
+
+            &-text
+            {
+                margin: 0 auto;
+            }
+            &-close{cursor: pointer;}
+        }
+        &--browse
+        {
+            background: $color-black;
+            color: $color-white;
+            font-size: 1.7rem;
+            padding: .6rem 2rem .6rem 0rem;
+            cursor: pointer;
+        }
+    }
+}
