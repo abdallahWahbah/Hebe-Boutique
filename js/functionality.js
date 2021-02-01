@@ -151,3 +151,24 @@ $(document).ready(function()
         }
     },{offset:"-105px"})
 });
+
+//------------------------------------ Smooth scroll ------------------------------------ 
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+//------------------------------------ open page when clicking on  ------------------------------------ 
+
+var navMainPageName = document.querySelector(".nav__main--page-name");
+navMainPageName.addEventListener("click", () =>
+{
+    // window.open("../index.html");
+    window.location.replace("../index.html")
+});

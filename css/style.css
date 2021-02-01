@@ -53,8 +53,7 @@ li {
   box-sizing: inherit; }
 
 html {
-  font-size: 62.5%;
-  scroll-behavior: smooth; }
+  font-size: 62.5%; }
   @media only screen and (max-width: 75em) {
     html {
       font-size: 56.25%; } }
@@ -193,7 +192,8 @@ body {
       cursor: pointer; }
     .nav__main--page-name {
       font-size: 4.5rem;
-      font-weight: 700; }
+      font-weight: 700;
+      cursor: pointer; }
     .nav__main--eqiv {
       font-size: 2.9rem;
       cursor: pointer; }
@@ -329,7 +329,8 @@ body {
         .footer__form--email {
           padding: 1rem 1.1rem; } }
     .footer__form--btn {
-      margin-right: 1rem; }
+      margin-right: 1rem;
+      cursor: pointer; }
 
 .header {
   height: 90vh;

@@ -26,17 +26,12 @@ html
     {
         font-size: 75%; // 1rem = 12px >>>> 12px/16px = 75%
     } 
-
-    scroll-behavior: smooth;
+    // scroll-behavior: smooth;
 }
+
 body
 {
     box-sizing: border-box;
-    // padding: 0 6rem; /* 1rem = root(html) font-size = 10px */
-    // @include respond(tab-port) 
-    // { 
-    //     padding: 0;
-    // }
 }
 
 ::selection
